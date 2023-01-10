@@ -1,0 +1,60 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 33rem;
+    min-height: 70rem;
+    background-color: $Dark-desaturated-blue;
+    border-radius: 10px;
+    
+    &__img img{
+        max-width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px 10px 0 0;
+        filter: opacity(0.6) drop-shadow(0 0 0 $Soft-violet);
+    }
+    &__description {
+        padding: 2.5em;
+        text-align: center;
+        h1 {
+            font-size: 3rem;
+            color: $white;
+            font-family: $Fuente1;
+            margin-bottom: 0.4em;
+            span {
+                color: 
+                $Soft-violet;
+            }
+        }
+        p {
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            color: $Slightly-transparent-white2;
+            font-family: $Fuente1;
+        }
+    }
+
+    &__stats {
+        display: flex;
+        justify-content: center;
+        li {
+            list-style: none;
+        }
+        .stats--big {
+            font-size: 2rem;
+            margin-bottom: 0.3em;
+            font-family: $Fuente1;
+            font-weight: 700;
+            color: $white;
+        }
+        .stats--little {
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            margin-bottom: 1.7em;
+            text-transform: uppercase;
+            color: $Slightly-transparent-white2;
+        }
+    }
+    
+}

@@ -1,0 +1,92 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: hsl(233deg, 47%, 7%);
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33rem;
+  min-height: 70rem;
+  background-color: hsl(244deg, 38%, 16%);
+  border-radius: 10px;
+}
+.card__img img {
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px 10px 0 0;
+  -webkit-filter: opacity(0.6) drop-shadow(0 0 0 hsl(277deg, 64%, 61%));
+          filter: opacity(0.6) drop-shadow(0 0 0 hsl(277deg, 64%, 61%));
+}
+.card__description {
+  padding: 2.5em;
+  text-align: center;
+}
+.card__description h1 {
+  font-size: 3rem;
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  margin-bottom: 0.4em;
+}
+.card__description h1 span {
+  color: hsl(277deg, 64%, 61%);
+}
+.card__description p {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: hsla(0deg, 0%, 100%, 0.6);
+  font-family: "Inter", sans-serif;
+}
+.card__stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.card__stats li {
+  list-style: none;
+}
+.card__stats .stats--big {
+  font-size: 2rem;
+  margin-bottom: 0.3em;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+}
+.card__stats .stats--little {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.7em;
+  text-transform: uppercase;
+  color: hsla(0deg, 0%, 100%, 0.6);
+}
