@@ -32,7 +32,8 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 33rem;
+  width: 90%;
+  max-width: 33rem;
   height: 70rem;
   background-color: hsl(244deg, 38%, 16%);
   border-radius: 10px;
@@ -103,7 +104,7 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 80vw;
+    max-width: 80vw;
     height: auto;
   }
   .card .left {

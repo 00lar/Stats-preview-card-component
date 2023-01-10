@@ -3,7 +3,8 @@
 .card {
     display: flex;
     flex-direction: column;
-    width: 33rem;
+    width: 90%;
+    max-width: 33rem;
     height: 70rem;
     background-color: $Dark-desaturated-blue;
     border-radius: 10px;
@@ -70,7 +71,7 @@
     .card {
         flex-direction: row-reverse;
         align-items: center;
-        width: 80vw;
+        max-width: 80vw;
         height: auto;
         .left{
             padding: 0 100px;
