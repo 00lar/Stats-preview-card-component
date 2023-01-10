@@ -1,8 +1,10 @@
+
+
 .card {
     display: flex;
     flex-direction: column;
     width: 33rem;
-    min-height: 70rem;
+    height: 70rem;
     background-color: $Dark-desaturated-blue;
     border-radius: 10px;
     
@@ -57,4 +59,29 @@
         }
     }
     
+}
+
+@media screen and (min-width: 1440px){
+
+    html {
+        font-size: 70%;
+    }
+
+    .card {
+        flex-direction: row-reverse;
+        width: 80vw;
+        height: auto;
+        .left{
+            padding: 0 100px;
+        }
+        &__stats {
+            ul {
+                display: flex;
+            }
+            li {
+                margin: 0 60px;
+            }
+        }
+    }
+
 }

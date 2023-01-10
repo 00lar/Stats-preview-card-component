@@ -33,7 +33,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 33rem;
-  min-height: 70rem;
+  height: 70rem;
   background-color: hsl(244deg, 38%, 16%);
   border-radius: 10px;
 }
@@ -89,4 +89,29 @@ main {
   margin-bottom: 1.7em;
   text-transform: uppercase;
   color: hsla(0deg, 0%, 100%, 0.6);
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 70%;
+  }
+  .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 80vw;
+    height: auto;
+  }
+  .card .left {
+    padding: 0 100px;
+  }
+  .card__stats ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .card__stats li {
+    margin: 0 60px;
+  }
 }
